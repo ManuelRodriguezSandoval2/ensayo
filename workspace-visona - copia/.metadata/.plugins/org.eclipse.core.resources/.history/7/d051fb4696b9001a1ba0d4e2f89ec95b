@@ -1,0 +1,5 @@
+package cl.inacap.microserviciotraspasos.entity;
+
+public class Traspasos {
+
+}

@@ -1,0 +1,80 @@
+package cl.inacap.microservicioproducto.entity;
+
+
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import cl.inacap.microserviciocategoriaproducto.entity.CategoriaProducto;
+
+@Entity
+@Table(name="PRODUCTO")
+public class Producto {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	
+	@Column(name="ID_PRODUCTO")	
+	private Long id;
+	
+	@Column(name="NOMBRE_PRODUCTO")	
+	private String nombreProducto;
+	
+	@Column(name="MEDIDA_ESTANDAR")	
+	private String medidaEstandar;
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	
+	
+	
+	@OneToMany(fetch =FetchType.LAZY)
+	private List<CategoriaProducto>categoriaProducto;
+	
+	
+	
+	
+	
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getNombreProducto() {
+		return nombreProducto;
+	}
+	public void setNombreProducto(String nombreProducto) {
+		this.nombreProducto = nombreProducto;
+	}
+	public String getMedidaEstandar() {
+		return medidaEstandar;
+	}
+	public void setMedidaEstandar(String medidaEstandar) {
+		this.medidaEstandar = medidaEstandar;
+	}
+	public List<CategoriaProducto> getCategoriaProducto() {
+		return categoriaProducto;
+	}
+	public void setCategoriaProducto(List<CategoriaProducto> categoriaProducto) {
+		this.categoriaProducto = categoriaProducto;
+	}
+	public void addCategoriaProducto(CategoriaProducto categoriaProducto) {
+		this.categoriaProducto.add(categoriaProducto);
+	}
+	public void removeCategoriaProducto(CategoriaProducto categoriaProducto) {
+		this.categoriaProducto.remove(categoriaProducto);
+	}
+	
+	
+	
+	
+}

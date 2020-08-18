@@ -1,0 +1,26 @@
+package cl.inacap.microservicioingresos.services;
+
+import java.util.Optional;
+
+
+
+
+public interface IngresoService {
+	
+	
+	public Iterable<Ingreso>finAll();
+	
+	
+	public Optional<Ingreso>findbyId(Long id);
+	
+	
+	
+	public Ingreso save(Ingreso ingreso);
+	
+	
+	
+	public void deleteById(Long id);
+	
+	
+
+}

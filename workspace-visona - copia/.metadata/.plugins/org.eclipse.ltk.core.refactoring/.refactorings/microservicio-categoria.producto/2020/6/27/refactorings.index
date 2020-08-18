@@ -1,0 +1,8 @@
+1593396765179	Delete element
+1593396826876	Rename package 'cl.inacap.microservicioproducto.controller'
+1593396834906	Rename package 'cl.inacap.microservicioproducto.repository'
+1593396844183	Rename package 'cl.inacap.microservicioproducto.services'
+1593396876114	Rename type 'ProductoService'
+1593396882824	Rename type 'ProductoServiceImpl'
+1593396890866	Rename type 'ProductoRepository'
+1593396897898	Rename type 'ProductoController'

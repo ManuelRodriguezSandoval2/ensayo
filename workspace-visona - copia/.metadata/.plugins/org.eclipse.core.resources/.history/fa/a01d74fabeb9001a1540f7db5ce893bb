@@ -1,0 +1,17 @@
+package cl.inacap.microserviciocategoriaproducto;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+
+@EnableEurekaClient
+@SpringBootApplication
+@EntityScan({"cl.inacap.microserviciocategoriaproducto.entity"})
+public class MicroservicioCategoriaProductoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MicroservicioCategoriaProductoApplication.class, args);
+	}
+
+}

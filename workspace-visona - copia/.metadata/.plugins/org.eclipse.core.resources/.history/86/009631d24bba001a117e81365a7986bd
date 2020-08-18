@@ -1,0 +1,140 @@
+package cl.inacap.microservicioingresos.entity;
+
+import java.util.Date;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.PrePersist;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import cl.inacap.microserviciobodega.entity.Bodega;
+import cl.inacap.microserviciocategoriaproducto.entity.CategoriaProducto;
+import cl.inacap.microserviciolugar.compra.entity.LugarCompra;
+import cl.inacap.microservicioproducto.entity.Producto;
+
+@Entity
+@Table(name="INGRESO")
+public class Ingreso {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	
+	@Column(name="ID_INGRESO")	
+	private Long id;
+	
+	@Column(name="NUMERO_GUIA")	
+	private int numero_guia;
+	
+	@Column(name="USUARIO")	
+	private String usuario;
+	
+	@Column(name="CANTIDAD")	
+	private int cantidad;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name="FECHA_INGRESO")		
+	private Date fecha_ingreso;
+	
+	@PrePersist
+	public void prePersist() {
+		this.fecha_ingreso=new Date();
+	}
+	/**
+	@OneToMany(fetch =FetchType.LAZY)
+	private List<Producto>producto;
+	
+
+	@OneToMany(fetch =FetchType.LAZY)
+	private List<LugarCompra>lugarCompra;
+	
+	@OneToMany(fetch =FetchType.LAZY)
+	private List<Bodega>bodega;
+	*/
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public int getNumero_guia() {
+		return numero_guia;
+	}
+	public void setNumero_guia(int numero_guia) {
+		this.numero_guia = numero_guia;
+	}
+	public String getUsuario() {
+		return usuario;
+	}
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
+	}
+	public int getCantidad() {
+		return cantidad;
+	}
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
+	}
+	public Date getFecha_ingreso() {
+		return fecha_ingreso;
+	}
+	public void setFecha_ingreso(Date fecha_ingreso) {
+		this.fecha_ingreso = fecha_ingreso;
+	}
+	
+	/////////////////////////////////////
+	
+	public List<Producto> getProducto() {
+		return producto;
+	}
+	public void setProducto(List<Producto> producto) {
+		this.producto = producto;
+	}
+	public void addProducto(Producto producto) {
+		this.producto.add(producto);
+	}
+	public void removeProducto(Producto producto) {
+		this.producto.remove(producto);
+		/*
+		///////////////////////////////
+	}
+	public List<Bodega> getBodega() {
+		return bodega;
+	}
+	public void setBodega(List<Bodega> bodega) {
+		this.bodega = bodega;
+	}
+	public void addBodega(Bodega bodega) {
+		this.bodega.add(bodega);
+	}
+	public void removeBodega(Bodega bodega) {
+		this.bodega.remove(bodega);
+	}
+	
+	///////////////////////////
+	public List<LugarCompra> lugarCompra() {
+		return lugarCompra;
+	}
+	public void setLugarCompra(List<LugarCompra> lugarCompra) {
+		this.lugarCompra = lugarCompra;
+	}
+	public void addLugarCompra(LugarCompra lugarCompra) {
+		this.lugarCompra.add(lugarCompra);
+	}
+	public void removeLugarCompra(LugarCompra lugarCompra) {
+		this.lugarCompra.remove(lugarCompra);
+	
+	
+	*/
+	}
+}

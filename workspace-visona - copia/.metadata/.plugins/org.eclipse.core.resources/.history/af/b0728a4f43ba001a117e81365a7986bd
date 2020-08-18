@@ -1,0 +1,30 @@
+package cl.inacap.microserviciolibrerias.services;
+
+import java.util.Optional;
+
+
+
+
+
+
+
+
+public interface LibProductoService <E>{
+	
+	
+	public Iterable<E>finAll();
+	
+	
+	public Optional<E>findbyId(Long id);
+	
+	
+	
+	public E save(E producto);
+	
+	
+	
+	public void deleteById(Long id);
+	
+	
+
+}

@@ -1,0 +1,8 @@
+1593395088978	Rename package 'cl.inacap.microservicioingreso.controller'
+1593395107693	Rename package 'cl.inacap.microservicioingreso.services'
+1593395116966	Rename package 'cl.inacap.microservicioingreso.repository'
+1593395135737	Rename type 'IngresoController'
+1593395143174	Rename type 'IngresoRepository'
+1593395151278	Rename type 'IngresoService'
+1593395157991	Rename type 'IngresoServiceImpl'
+1593395535215	Copy packages

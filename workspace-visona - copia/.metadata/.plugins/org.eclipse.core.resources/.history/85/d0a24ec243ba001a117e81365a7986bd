@@ -1,0 +1,49 @@
+package cl.inacap.microservicioproducto.services;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import cl.inacap.microservicioproducto.entity.Producto;
+import cl.inacap.microservicioproducto.repository.ProductoRepository;
+
+
+@Service
+public class ProductoServiceImpl implements ProductoService {
+
+	
+	@Autowired
+	private ProductoRepository repository;
+	@Override
+	@Transactional(readOnly=true)
+	public Iterable<Producto> finAll() {
+		// TODO Auto-generated method stub
+		return repository.findAll();
+	}
+
+	@Override
+	@Transactional(readOnly=true)
+	public Optional<Producto> findbyId(Long id) {
+		// TODO Auto-generated method stub
+		return repository.findById(id);
+		
+	}
+
+	@Override
+	@Transactional
+	public Producto save(Producto producto) {
+		// TODO Auto-generated method stub
+		return repository.save(producto);
+	}
+
+	@Override
+	@Transactional
+	public void deleteById(Long id) {
+		// TODO Auto-generated method stub
+		repository.deleteById(id);
+
+	}
+
+}

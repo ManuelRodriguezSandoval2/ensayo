@@ -1,0 +1,5 @@
+package cl.inacap.microservicioexistencias.entity;
+
+public class Existencias {
+
+}

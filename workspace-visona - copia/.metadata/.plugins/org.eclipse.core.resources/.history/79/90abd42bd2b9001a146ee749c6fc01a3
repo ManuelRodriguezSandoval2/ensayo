@@ -1,0 +1,18 @@
+package cl.inacap.microservicioingresos;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@SpringBootApplication
+@EntityScan({
+	  "cl.inacap.microservicioproducto.entity",
+	  "cl.inacap.microserviciobodega.entity",
+	  "cl.inacap.microserviciolugar.compra.entity"})
+public class MicroservicioIngresosApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MicroservicioIngresosApplication.class, args);
+	}
+
+}

@@ -1,0 +1,13 @@
+package cl.inacap.microserviciolibrerias;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MicroservicioLibreriasApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MicroservicioLibreriasApplication.class, args);
+	}
+
+}

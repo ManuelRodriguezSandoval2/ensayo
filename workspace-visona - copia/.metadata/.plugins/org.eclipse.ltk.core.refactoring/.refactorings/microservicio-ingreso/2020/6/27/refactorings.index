@@ -1,0 +1,17 @@
+1593394575766	Rename package 'cl.inacap.microservicioexistencias.controller'
+1593394585468	Rename package 'cl.inacap.microservicioexistencias.repository'
+1593394601990	Rename package 'cl.inacap.microservicioexistencias.services'
+1593394624263	Rename type 'ExistenciaController'
+1593394641024	Rename type 'ExistenciasRepository'
+1593394651513	Rename type 'ExistenciasService'
+1593394663463	Rename type 'ExistenciasServiceImpl'
+1593395063030	Copy packages
+1593400719810	Delete elements
+1593400731927	Delete element
+1593400765719	Rename type 'TraspasosController'
+1593400781327	Rename package 'cl.inacap.microserviciotraspasos.repository'
+1593400792446	Rename package 'cl.inacap.microserviciotraspasos.services'
+1593400801057	Rename package 'cl.inacap.microserviciotraspasos.controller'
+1593400812767	Rename type 'TraspasosService'
+1593400819855	Rename type 'TraspasosServiceImpl'
+1593400830890	Rename type 'TraspasosRepository'

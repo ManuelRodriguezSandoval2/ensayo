@@ -1,0 +1,5 @@
+package cl.inacap.microserviciobodega.entity;
+
+public class Bodega {
+
+}

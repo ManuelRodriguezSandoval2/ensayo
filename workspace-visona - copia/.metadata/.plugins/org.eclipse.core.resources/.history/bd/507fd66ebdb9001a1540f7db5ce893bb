@@ -1,0 +1,9 @@
+package cl.inacap.microserviciocategoriaproducto.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+
+
+public interface CategoriaProductoRepository extends CrudRepository<CategoriaProducto, Long> {
+
+}

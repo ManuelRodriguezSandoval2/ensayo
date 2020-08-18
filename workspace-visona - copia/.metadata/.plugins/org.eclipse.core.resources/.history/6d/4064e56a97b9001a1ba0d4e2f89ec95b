@@ -1,0 +1,50 @@
+package cl.inacap.microservicioproducto.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="PRODUCTO")
+public class Producto {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	
+	@Column(name="STOCK")	
+	private Long id;
+	
+	@Column(name="STOCK")	
+	private String nombreProducto;
+	
+	@Column(name="STOCK")	
+	private String medidaEstandar;
+	
+	
+	
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getNombreProducto() {
+		return nombreProducto;
+	}
+	public void setNombreProducto(String nombreProducto) {
+		this.nombreProducto = nombreProducto;
+	}
+	public String getMedidaEstandar() {
+		return medidaEstandar;
+	}
+	public void setMedidaEstandar(String medidaEstandar) {
+		this.medidaEstandar = medidaEstandar;
+	}
+	
+	
+	
+}

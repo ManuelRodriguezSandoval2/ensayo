@@ -1,0 +1,13 @@
+package cl.inacap.microserviciocategoriaproducto;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MicroservicioCategoriaProductoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MicroservicioCategoriaProductoApplication.class, args);
+	}
+
+}

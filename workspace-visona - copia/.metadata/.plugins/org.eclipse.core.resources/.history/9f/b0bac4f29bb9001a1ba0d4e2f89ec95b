@@ -1,0 +1,13 @@
+package cl.inacap.microserviciozuul;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MicroservicioZuulApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MicroservicioZuulApplication.class, args);
+	}
+
+}

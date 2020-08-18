@@ -1,0 +1,13 @@
+package cl.inacap.microservicioexistencias;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MicroservicioExistenciasApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MicroservicioExistenciasApplication.class, args);
+	}
+
+}

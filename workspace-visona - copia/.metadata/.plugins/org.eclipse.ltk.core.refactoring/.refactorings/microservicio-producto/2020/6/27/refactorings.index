@@ -1,0 +1,12 @@
+1593395550900	Rename package 'cl.inacap.microserviciolugar.compra.controller'
+1593395564701	Rename package 'cl.inacap.microserviciolugar.compra.services'
+1593395573735	Rename package 'cl.inacap.microserviciolugar.compra.repository'
+1593395607660	Rename type 'LugarCompraController'
+1593395619301	Rename type 'LugarCompraRepository'
+1593395630457	Rename type 'LugarCompraService'
+1593395642693	Rename type 'LugarCompraServiceImpl'
+1593396058266	Copy packages
+1593396773038	Move compilation unit
+1593396811873	Copy packages
+1593460478843	Copy compilation units
+1593461304198	Copy compilation unit

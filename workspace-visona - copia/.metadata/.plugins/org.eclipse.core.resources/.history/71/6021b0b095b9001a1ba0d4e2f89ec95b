@@ -1,0 +1,5 @@
+package cl.inacap.microserviciolugar.compra.entity;
+
+public class LugarCompra {
+
+}

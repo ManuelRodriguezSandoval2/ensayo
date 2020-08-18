@@ -1,0 +1,16 @@
+package cl.inacap.microservicioexistencias.entity;
+
+
+
+@Entity
+@Table(name="EXISTENCIAS")
+public class Existencias {
+	
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	
+	private Long id;
+	private String nombreCategoria;
+
+}

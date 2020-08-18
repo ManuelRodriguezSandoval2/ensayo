@@ -1,0 +1,18 @@
+package cl.inacap.microserviciobodega;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+
+@SpringBootApplication
+@EnableEurekaClient
+@EntityScan({
+	  "cl.inacap.microservicioingresos.entity"})
+public class MicroservicioBodegaApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MicroservicioBodegaApplication.class, args);
+	}
+
+}

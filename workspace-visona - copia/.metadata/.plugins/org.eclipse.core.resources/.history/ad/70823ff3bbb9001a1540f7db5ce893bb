@@ -1,0 +1,9 @@
+package cl.inacap.microservicioingresos.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+
+
+public interface IngresoRepository extends CrudRepository<Ingreso, Long> {
+
+}

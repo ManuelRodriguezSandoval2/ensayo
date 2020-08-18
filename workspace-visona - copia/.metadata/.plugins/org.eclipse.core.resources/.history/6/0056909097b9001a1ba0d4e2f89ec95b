@@ -1,0 +1,73 @@
+package cl.inacap.microserviciolugar.compra.entity;
+
+
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="LUGAR_COMPRA")
+public class LugarCompra {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	
+	private Long id;
+	private String razonSocial;
+	private String rut;
+	private String direccion;
+	private String comuna;
+	private String email;
+	private String giro;
+	
+	
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getRazonSocial() {
+		return razonSocial;
+	}
+	public void setRazonSocial(String razonSocial) {
+		this.razonSocial = razonSocial;
+	}
+	public String getRut() {
+		return rut;
+	}
+	public void setRut(String rut) {
+		this.rut = rut;
+	}
+	public String getDireccion() {
+		return direccion;
+	}
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+	public String getComuna() {
+		return comuna;
+	}
+	public void setComuna(String comuna) {
+		this.comuna = comuna;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getGiro() {
+		return giro;
+	}
+	public void setGiro(String giro) {
+		this.giro = giro;
+	}
+	
+	
+}
+

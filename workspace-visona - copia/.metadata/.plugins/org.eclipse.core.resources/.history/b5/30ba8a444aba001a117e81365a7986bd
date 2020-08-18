@@ -1,0 +1,18 @@
+package cl.inacap.microservicioproducto.services;
+
+
+
+import org.springframework.stereotype.Service;
+
+import cl.inacap.microserviciolibrerias.services.LibProductoServiceImpl;
+import cl.inacap.microservicioproducto.entity.Producto;
+import cl.inacap.microservicioproducto.repository.ProductoRepository;
+
+
+@Service
+public class ProductoServiceImpl extends LibProductoServiceImpl<Producto, ProductoRepository> implements ProductoService {
+
+	
+	
+
+}
